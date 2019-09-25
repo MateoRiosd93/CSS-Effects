@@ -25,9 +25,10 @@ body{
 .title{
     font-size: 4em;
     font-weight: 500;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 3px;
     color: #fff;
+    text-shadow: 0 2px 4px rgb(0, 255, 255); 
 }
 
 .list{
@@ -38,13 +39,13 @@ body{
     display: flex;
 }
 
-.list .item-list {
+.item-list {
     list-style: none;
     position: relative;
     margin: 0 10px;
 }
 
-.list .item-list .follow{
+.follow{
     width: 70px;
     height: 40px;
     background: #fff;
@@ -57,7 +58,11 @@ body{
     color: #fff;
 }
 
-.list .item-list .follow::before{
+.follow:hover{
+    transform: translateY(-20px);
+}
+
+.follow::before{
     content: '';
     position: absolute;
     top: 0;
@@ -69,7 +74,7 @@ body{
     transform: rotate(60deg);
 }
 
-.list .item-list .follow::after{
+.follow::after{
     content: '';
     position: absolute;
     top: 0;
@@ -81,33 +86,33 @@ body{
     transform: rotate(-60deg);
 }
 
-.list .item-list:nth-child(1) .follow,
-.list .item-list:nth-child(1) .follow::before,
-.list .item-list:nth-child(1) .follow::after{
+.item-list:nth-child(1) .follow,
+.item-list:nth-child(1) .follow::before,
+.item-list:nth-child(1) .follow::after{
     background: var(--colorFacebook);
 }
 
-.list .item-list:nth-child(2) .follow,
-.list .item-list:nth-child(2) .follow::before,
-.list .item-list:nth-child(2) .follow::after{
+.item-list:nth-child(2) .follow,
+.item-list:nth-child(2) .follow::before,
+.item-list:nth-child(2) .follow::after{
     background: var(--colorGoogle);
 }
 
-.list .item-list:nth-child(3) .follow,
-.list .item-list:nth-child(3) .follow::before,
-.list .item-list:nth-child(3) .follow::after{
+.item-list:nth-child(3) .follow,
+.item-list:nth-child(3) .follow::before,
+.item-list:nth-child(3) .follow::after{
     background: var(--colorTwitter);
 }
 
-.list .item-list:nth-child(4) .follow,
-.list .item-list:nth-child(4) .follow::before,
-.list .item-list:nth-child(4) .follow::after{
+.item-list:nth-child(4) .follow,
+.item-list:nth-child(4) .follow::before,
+.item-list:nth-child(4) .follow::after{
     background: var(--colorLinkedin);
 }
 
-.list .item-list:nth-child(5) .follow,
-.list .item-list:nth-child(5) .follow::before,
-.list .item-list:nth-child(5) .follow::after{
+.item-list:nth-child(5) .follow,
+.item-list:nth-child(5) .follow::before,
+.item-list:nth-child(5) .follow::after{
     background: var(--colorInstagram);
 }
 
